@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>About Us - National Star Investment Co. Ltd</title> 
+  <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #002244;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            display: block;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #002244;
+            width: 100%;
+            z-index: 1;
+        }
+        .menu a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid #f28500;
+        }
+        .menu a:hover {
+            background-color: #f28500;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .hero-section img {
+            max-width: 40%;
+            border-radius: 8px;
+        }
+        .hero-section .hero-text {
+            max-width: 55%;
+        }
+        .hero-section .hero-text h1 {
+            color: #002244;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .hero-section .hero-text p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #002244;
+            border-bottom: 3px solid #f28500;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .values-list, .clients-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .values-list li, .clients-list li {
+            background-color: #f28500;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #002244;
+            color: white;
+        }
+        table td {
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style> 
+ </head> 
+ <body> <!-- Header with Menu Icon --> 
+  <header> 
+   <div class="logo"> 
+    <h2>National Star Investment Co. Ltd</h2> 
+   </div> <span class="menu-icon" onclick="toggleMenu()">☰</span> 
+   <div class="menu" id="menu"> <a href="#">Home</a> <a href="#">Business</a> <a href="#">Others</a> 
+   </div> 
+  </header> <!-- Main Content --> 
+  <div class="container"> <!-- Hero Section --> 
+   <div class="hero-section"> 
+    <div class="hero-text"> 
+     <h1>About National Star Investment Co. Ltd</h1> 
+     <p> Founded in 2013, National Star Investment Co. Ltd is a reputable and dynamic general trading company based in South Sudan. We specialize in the trading of goods and services across a range of sectors, delivering high-quality products and reliable services to our clients. We are known for our dedication to customer satisfaction, competitive pricing, and on-time delivery. </p> 
+    </div> 
+    <img src="https://i.postimg.cc/50kHYXWd/the-word-about-us-on-wooden-cubes-business-communication-and-information.jpg" alt="About Us"> 
+   </div> <!-- Vision Section --> 
+   <div class="section" id="vision"> 
+    <h2>Vision</h2> 
+    <p> Perceiving customer needs at the highest level by providing them flexibility in sourcing, competitive prices, on-time deliveries, and customized solutions tailored to their unique needs. </p> 
+   </div> <!-- Mission Section --> 
+   <div class="section" id="mission"> 
+    <h2>Mission</h2> 
+    <p> Our mission is to be a South Sudanese company recognized nationwide for excellence, consistently exceeding customer expectations with quality services and products. </p> 
+   </div> <!-- Values Section --> 
+   <div class="section" id="values"> 
+    <h2>Our Values</h2> 
+    <ul class="values-list"> 
+     <li>Customer Commitment</li> 
+     <li>Quality</li> 
+     <li>Integrity</li> 
+     <li>Teamwork</li> 
+     <li>Respect for People</li> 
+     <li>Will to Win</li> 
+     <li>Personal Accountability</li> 
+    </ul> 
+   </div> <!-- Experience Section --> 
+   <div class="section" id="experience"> 
+    <h2>Experience (POs/Contracts)</h2> 
+    <table> 
+     <tbody>
+      <tr> 
+       <th>Year</th> 
+       <th>Activity</th> 
+       <th>Amount (USD)</th> 
+       <th>Organization</th> 
+       <th>Contact Person</th> 
+       <th>Location</th> 
+      </tr> 
+      <tr> 
+       <td>2024</td> 
+       <td>Assorted School Supplies</td> 
+       <td>12,000</td> 
+       <td>LWF</td> 
+       <td>Ayiik Goch</td> 
+       <td>Bor</td> 
+      </tr> 
+      <tr> 
+       <td>2023</td> 
+       <td>Supply of Office Furniture</td> 
+       <td>25,500</td> 
+       <td>UNDP</td> 
+       <td>Sayed – Field Co.</td> 
+       <td>Bor</td> 
+      </tr> 
+      <tr> 
+       <td>2022</td> 
+       <td>Supply of Office Stationery</td> 
+       <td>10,000</td> 
+       <td>ICRC</td> 
+       <td>Alier Deng Akuei</td> 
+       <td>Bor</td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> <!-- Clients Section --> 
+   <div class="section" id="clients"> 
+    <h2>Our Clients</h2> 
+    <ul class="clients-list"> 
+     <li>ICRC</li> 
+     <li>UNDP</li> 
+     <li>LWF</li> 
+     <li>MSF</li> 
+     <li>Save the Children</li> 
+    </ul> 
+   </div> <!-- Legal Section --> 
+   <div class="section" id="legal"> 
+    <h2>Legal Information</h2> 
+    <p> National Star Investment Co. Ltd is a fully registered company under the Ministry of Justice of the Republic of South Sudan. We are compliant with all regulations and legal requirements governing business operations in South Sudan. </p> 
+   </div> 
+  </div> <!-- Footer --> 
+  <footer> 
+   <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p> 
+  </footer> <!-- JavaScript for Menu Toggle --> 
+  <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script> 
+ 
+</body></html>

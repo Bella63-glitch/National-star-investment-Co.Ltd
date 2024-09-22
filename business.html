@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Our Businesses - National Star Investment Co. Ltd</title> 
+  <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #002244;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #002244;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-icon.active + nav {
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section h1 {
+            color: #002244;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Business Tabs Styling */
+        .business-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .business-item {
+            padding: 20px;
+            background-color: #002244;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .business-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .business-item p {
+            font-size: 14px;
+        }
+
+        .business-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #002244;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style> 
+ </head> 
+ <body> <!-- Header with Menu Icon --> 
+  <header> 
+   <div class="logo"> 
+    <h2>National Star Investment Co. Ltd</h2> 
+   </div> 
+   <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+   </div> 
+   <nav> <a href="#">Home</a> <a href="#">About Us</a> <a href="#">Others</a> 
+   </nav> 
+  </header> <!-- Main Content --> 
+  <div class="container"> <!-- Hero Section --> 
+   <div class="hero-section"> 
+    <h1>Our Businesses</h1> 
+    <p> National Star Investment Co. Ltd is involved in a wide range of industries. Below are the sectors we operate in. </p> 
+   </div> <!-- Business Tabs Section --> 
+   <div class="business-list"> <!-- Business Item 1 --> 
+    <div class="business-item"> 
+     <h3>Agriculture</h3> 
+     <p>Farming, livestock, forestry, and fisheries.</p> 
+    </div> <!-- Business Item 2 --> 
+    <div class="business-item"> 
+     <h3>Automotive</h3> 
+     <p>Car manufacturing, parts, and repair services.</p> 
+    </div> <!-- Business Item 3 --> 
+    <div class="business-item"> 
+     <h3>Aerospace</h3> 
+     <p>Aircraft, spacecraft, defense, and related services.</p> 
+    </div> <!-- Business Item 4 --> 
+    <div class="business-item"> 
+     <h3>Banking &amp; Finance</h3> 
+     <p>Banking, investment, insurance, financial planning.</p> 
+    </div> <!-- Business Item 5 --> 
+    <div class="business-item"> 
+     <h3>Construction</h3> 
+     <p>Residential, commercial, and civil engineering projects.</p> 
+    </div> <!-- Business Item 6 --> 
+    <div class="business-item"> 
+     <h3>Education</h3> 
+     <p>Schools, colleges, universities, and training centers.</p> 
+    </div> <!-- Business Item 7 --> 
+    <div class="business-item"> 
+     <h3>Healthcare</h3> 
+     <p>Hospitals, clinics, pharmaceuticals, biotechnology.</p> 
+    </div> <!-- Business Item 8 --> 
+    <div class="business-item"> 
+     <h3>Information Technology</h3> 
+     <p>Software, hardware, IT services, cybersecurity.</p> 
+    </div> <!-- Business Item 9 --> 
+    <div class="business-item"> 
+     <h3>Manufacturing</h3> 
+     <p>Industrial goods, consumer products, electronics.</p> 
+    </div> <!-- Business Item 10 --> 
+    <div class="business-item"> 
+     <h3>Media &amp; Entertainment</h3> 
+     <p>Film, television, music, publishing, gaming.</p> 
+    </div> <!-- Business Item 11 --> 
+    <div class="business-item"> 
+     <h3>Retail</h3> 
+     <p>E-commerce, brick-and-mortar stores, wholesalers.</p> 
+    </div> <!-- Business Item 12 --> 
+    <div class="business-item"> 
+     <h3>Telecommunications</h3> 
+     <p>Telephone, internet, and satellite services.</p> 
+    </div> <!-- Business Item 13 --> 
+    <div class="business-item"> 
+     <h3>Energy</h3> 
+     <p>Oil, gas, renewable energy, utilities.</p> 
+    </div> <!-- Business Item 14 --> 
+    <div class="business-item"> 
+     <h3>Transportation &amp; Logistics</h3> 
+     <p>Shipping, logistics, public transportation.</p> 
+    </div> <!-- Business Item 15 --> 
+    <div class="business-item"> 
+     <h3>Hospitality</h3> 
+     <p>Hotels, restaurants, tourism services.</p> 
+    </div> <!-- Business Item 16 --> 
+    <div class="business-item"> 
+     <h3>Real Estate</h3> 
+     <p>Property development, management, sales.</p> 
+    </div> <!-- Business Item 17 --> 
+    <div class="business-item"> 
+     <h3>Professional Services</h3> 
+     <p>Consultancy, advisor, &amp; management consulting.</p> 
+    </div> 
+   </div> 
+  </div> <!-- Footer --> 
+  <footer> 
+   <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p> 
+  </footer> 
+  <script>
+        function toggleMenu() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const nav = document.querySelector('nav');
+            menuIcon.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script> 
+ 
+</body></html>
