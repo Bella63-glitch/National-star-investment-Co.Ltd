@@ -146,24 +146,24 @@
    <div class="logo"> 
     <h2>National Star Investment Co. Ltd</h2> 
    </div> <span class="menu-icon" onclick="toggleMenu()">☰</span> 
-   <div class="menu" id="menu"> <a href="#">Home</a> <a href="#">Business</a> <a href="#">Others</a> 
-   </div> 
+   <nav class="menu" id="menu"> <a href="index.html">Home</a> <a href="business.html">Business</a> <a href="about-us.html">About Us</a> <a href="contact.html">Contact</a> 
+   </nav> 
   </header> <!-- Main Content --> 
   <div class="container"> <!-- Hero Section --> 
    <div class="hero-section"> 
     <div class="hero-text"> 
      <h1>About National Star Investment Co. Ltd</h1> 
-     <p> Founded in 2013, National Star Investment Co. Ltd is a reputable and dynamic general trading company based in South Sudan. We specialize in the trading of goods and services across a range of sectors, delivering high-quality products and reliable services to our clients. We are known for our dedication to customer satisfaction, competitive pricing, and on-time delivery. </p> 
+     <p>Founded in 2013, National Star Investment Co. Ltd is a reputable and dynamic general trading company based in South Sudan. We specialize in the trading of goods and services across a range of sectors, delivering high-quality products and reliable services to our clients. We are known for our dedication to customer satisfaction, competitive pricing, and on-time delivery.</p> 
     </div> 
     <img src="https://i.postimg.cc/50kHYXWd/the-word-about-us-on-wooden-cubes-business-communication-and-information.jpg" alt="About Us"> 
    </div> <!-- Vision Section --> 
    <div class="section" id="vision"> 
     <h2>Vision</h2> 
-    <p> Perceiving customer needs at the highest level by providing them flexibility in sourcing, competitive prices, on-time deliveries, and customized solutions tailored to their unique needs. </p> 
+    <p>Perceiving customer needs at the highest level by providing them flexibility in sourcing, competitive prices, on-time deliveries, and customized solutions tailored to their unique needs.</p> 
    </div> <!-- Mission Section --> 
    <div class="section" id="mission"> 
     <h2>Mission</h2> 
-    <p> Our mission is to be a South Sudanese company recognized nationwide for excellence, consistently exceeding customer expectations with quality services and products. </p> 
+    <p>Our mission is to be a South Sudanese company recognized nationwide for excellence, consistently exceeding customer expectations with quality services and products.</p> 
    </div> <!-- Values Section --> 
    <div class="section" id="values"> 
     <h2>Our Values</h2> 
@@ -180,7 +180,7 @@
    <div class="section" id="experience"> 
     <h2>Experience (POs/Contracts)</h2> 
     <table> 
-     <tbody>
+     <thead> 
       <tr> 
        <th>Year</th> 
        <th>Activity</th> 
@@ -189,6 +189,8 @@
        <th>Contact Person</th> 
        <th>Location</th> 
       </tr> 
+     </thead> 
+     <tbody> 
       <tr> 
        <td>2024</td> 
        <td>Assorted School Supplies</td> 
@@ -213,7 +215,7 @@
        <td>Alier Deng Akuei</td> 
        <td>Bor</td> 
       </tr> 
-     </tbody>
+     </tbody> 
     </table> 
    </div> <!-- Clients Section --> 
    <div class="section" id="clients"> 
@@ -228,17 +230,21 @@
    </div> <!-- Legal Section --> 
    <div class="section" id="legal"> 
     <h2>Legal Information</h2> 
-    <p> National Star Investment Co. Ltd is a fully registered company under the Ministry of Justice of the Republic of South Sudan. We are compliant with all regulations and legal requirements governing business operations in South Sudan. </p> 
+    <p>National Star Investment Co. Ltd is a fully registered company under the Ministry of Justice of the Republic of South Sudan. We are compliant with all regulations and legal requirements governing business operations in South Sudan.</p> 
    </div> 
   </div> <!-- Footer --> 
   <footer> 
-   <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p> 
-  </footer> <!-- JavaScript for Menu Toggle --> 
-  <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+   <p>© 2024 National Star Investment Co. Ltd. All Rights Reserved.</p> 
+  </footer> <!-- JavaScript to handle the menu toggle --> 
+  <script> 
+   function toggleMenu() {
+        var menu = document.getElementById('menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
         }
-    </script> 
- 
-</body></html>
+    }
+  </script> 
+ </body>
+</htmll/>
