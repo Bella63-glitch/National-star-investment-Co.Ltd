@@ -85,7 +85,6 @@
             color: #555;
         }
 
-        /* Business Tabs Styling */
         .business-list {
             display: flex;
             flex-direction: column;
@@ -121,9 +120,19 @@
             padding: 10px;
             text-align: center;
         }
+
+        /* New image styling */
+        .business-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
     </style> 
  </head> 
- <body> <!-- Header with Menu Icon --> 
+ <body> 
   <header> 
    <div class="logo"> 
     <h2>National Star Investment Co. Ltd</h2> 
@@ -131,14 +140,19 @@
    <div class="menu-icon" onclick="toggleMenu()">
     ☰
    </div> 
-   <nav> <a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="other.html">Other</a> 
+   <nav> 
+    <a href="index.html">Home</a> 
+    <a href="about.html">About Us</a> 
+    <a href="other.html">Other</a> 
    </nav> 
-  </header> <!-- Main Content --> 
-  <div class="container"> <!-- Hero Section --> 
+  </header> 
+  <div class="container"> 
    <div class="hero-section"> 
     <h1>Our Businesses</h1> 
     <p>National Star Investment Co. Ltd is involved in a wide range of industries. Below are the sectors we operate in.</p> 
-   </div> <!-- Business Tabs Section --> 
+   </div> 
+   <!-- Image Section -->
+   <img src="https://i.postimg.cc/KY4cVf5j/IMG-20240923-133428.jpg" alt="Our Business" class="business-image">
    <div class="business-list"> 
     <div class="business-item"> 
      <h3>Agriculture</h3> 
@@ -209,7 +223,7 @@
      <p>Consultancy, advisor &amp; management consulting.</p> 
     </div> 
    </div> 
-  </div> <!-- Footer --> 
+  </div> 
   <footer> 
    <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p> 
   </footer> 
@@ -222,4 +236,4 @@
         }
     </script> 
  </body>
-</html>
+</html/>
