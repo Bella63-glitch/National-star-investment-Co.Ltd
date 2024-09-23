@@ -1,205 +1,208 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Others - National Star Investment Co. Ltd</title>
-    <style>
-      body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Others - National Star Investment Co. Ltd</title> 
+  <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-      header {
-        background-color: #002244; /* Header Color */
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        position: relative;
-      }
+        header {
+            background-color: #002244; /* Header Color */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
 
-      .logo h2 {
-        margin: 0;
-        font-size: 24px;
-      }
+        .logo h2 {
+            margin: 0;
+            font-size: 24px;
+        }
 
-      .menu-icon {
-        font-size: 30px;
-        color: white; /* Menu Icon Color */
-        cursor: pointer;
-      }
+        .menu-icon {
+            font-size: 30px;
+            color: white; /* Menu Icon Color */
+            cursor: pointer;
+        }
 
-      nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #002244; /* Dark Blue Background for Dropdown */
-        border-radius: 8px;
-        padding: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+        nav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #002244; /* Dark Blue Background for Dropdown */
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-      nav.active {
-        display: block;
-      }
+        nav a {
+            display: block;
+            color: white; /* White text in Dropdown */
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 16px;
+        }
 
-      nav a {
-        display: block;
-        color: white; /* White text in Dropdown */
-        text-decoration: none;
-        margin: 10px 0;
-        font-size: 16px;
-      }
+        nav a:hover {
+            background-color: #1a4876; /* Slightly lighter blue on hover */
+            padding: 5px;
+            border-radius: 5px;
+        }
 
-      nav a:hover {
-        background-color: #1a4876; /* Slightly lighter blue on hover */
-        padding: 5px;
-        border-radius: 5px;
-      }
+        .menu-icon.active + nav {
+            display: block;
+        }
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-      .hero-section {
-        text-align: center;
-        margin-bottom: 30px;
-        padding: 15px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+        .hero-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-      .hero-section h1 {
-        color: #002244;
-        font-size: 28px;
-        margin-bottom: 10px;
-      }
+        .hero-section h1 {
+            color: #002244;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
 
-      .hero-section p {
-        font-size: 16px;
-        color: #555;
-      }
+        .hero-section p {
+            font-size: 16px;
+            color: #555;
+        }
 
-      .hero-section img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-      .others-list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
+        .others-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-      .others-item {
-        padding: 20px;
-        background-color: #002244; /* Item Background Color */
-        color: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
+        .others-item {
+            padding: 20px;
+            background-color: #002244; /* Item Background Color */
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-      .others-item h3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-      }
+        .others-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
 
-      .others-item p {
-        font-size: 14px;
-      }
+        .others-item p {
+            font-size: 14px;
+        }
 
-      .others-item:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      }
+        .others-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
 
-      footer {
-        background-color: #002244; /* Footer Color */
-        color: white;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header with Menu Icon -->
-    <header>
-      <div class="logo">
-        <h2>National Star Investment Co. Ltd</h2>
-      </div>
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
-      <nav id="menu">
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="businesses.html">Businesses</a>
-      </nav>
-    </header>
+        footer {
+            background-color: #002244; /* Footer Color */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <!-- Header with Menu Icon --> 
+  <header> 
+   <div class="logo"> 
+    <h2>National Star Investment Co. Ltd</h2> 
+   </div> 
+   <div class="menu-icon" onclick="toggleMenu()">
+     ☰ 
+   </div> 
+   <nav> 
+     <a href="index.html">Home</a> 
+     <a href="about-us.html">About Us</a> 
+     <a href="businesses.html">Businesses</a> 
+   </nav> 
+  </header> 
+  
+  <!-- Main Content --> 
+  <div class="container"> 
+    <!-- Hero Section --> 
+   <div class="hero-section"> 
+    <h1>Others</h1> 
+    <p>Explore the various other services we offer at National Star Investment Co. Ltd.</p> 
+    <img src="https://i.postimg.cc/rpXYZq9G/IMG-20240922-185943.jpg" alt="National Star Investment"> 
+   </div> 
+   
+   <!-- Others Section --> 
+   <div class="others-list"> 
+    <div class="others-item"> 
+     <h3>Research &amp; Ranking</h3> 
+     <p>Providing detailed market research and ranking services.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Daily Commodity Prices</h3> 
+     <p>Up-to-date commodity pricing for better business decisions.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Currency Exchange Rates</h3> 
+     <p>Stay informed on the latest currency exchange rates across markets.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Local News</h3> 
+     <p>Receive the latest local business and market news.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Career Guidance</h3> 
+     <p>Helping individuals make informed career decisions.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Adverts (Jobs &amp; Tenders)</h3> 
+     <p>Find the latest job opportunities and business tenders.</p> 
+    </div> 
+    <div class="others-item"> 
+     <h3>Business Contact Lists</h3> 
+     <p>Access to business contact lists for networking and partnerships.</p> 
+    </div> 
+   </div> 
+  </div> 
+  
+  <!-- Footer --> 
+  <footer> 
+   <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p> 
+  </footer> 
 
-    <!-- Main Content -->
-    <div class="container">
-      <!-- Hero Section -->
-      <div class="hero-section">
-        <h1>Others</h1>
-        <p>Explore the various other services we offer at National Star Investment Co. Ltd.</p>
-        <img src="https://i.postimg.cc/rpXYZq9G/IMG-20240922-185943.jpg" alt="National Star Investment">
-      </div>
-
-      <!-- Others Section -->
-      <div class="others-list">
-        <div class="others-item">
-          <h3>Research &amp; Ranking</h3>
-          <p>Providing detailed market research and ranking services.</p>
-        </div>
-        <div class="others-item">
-          <h3>Daily Commodity Prices</h3>
-          <p>Up-to-date commodity pricing for better business decisions.</p>
-        </div>
-        <div class="others-item">
-          <h3>Currency Exchange Rates</h3>
-          <p>Stay informed on the latest currency exchange rates across markets.</p>
-        </div>
-        <div class="others-item">
-          <h3>Local News</h3>
-          <p>Receive the latest local business and market news.</p>
-        </div>
-        <div class="others-item">
-          <h3>Career Guidance</h3>
-          <p>Helping individuals make informed career decisions.</p>
-        </div>
-        <div class="others-item">
-          <h3>Adverts (Jobs &amp; Tenders)</h3>
-          <p>Find the latest job opportunities and business tenders.</p>
-        </div>
-        <div class="others-item">
-          <h3>Business Contact Lists</h3>
-          <p>Access to business contact lists for networking and partnerships.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2024 National Star Investment Co. Ltd. All rights reserved.</p>
-    </footer>
-
-    <script>
-      function toggleMenu() {
-        const nav = document.getElementById('menu');
-        nav.classList.toggle('active');
-      }
-    </script>
-  </body>
-</html>
+  <script>
+        function toggleMenu() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const nav = document.querySelector('nav');
+            menuIcon.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script> 
+ </body>
+</html/>
